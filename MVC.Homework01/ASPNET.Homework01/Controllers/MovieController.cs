@@ -15,7 +15,8 @@ namespace ASPNET.Homework01.Controllers
             return View();
         }
 
-        [HttpGet("get-movies/{id:DateTime}")]
+        [HttpGet("get-movies/{id:datetime}")]
+        // yyyy-mm-dd
         public IActionResult GetMoviesByDateTime(DateTime datetime)
         {
             datetime = DateTime.Now;

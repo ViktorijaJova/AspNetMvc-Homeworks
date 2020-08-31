@@ -11801,11 +11801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\MVC-Homeworks\\MVC.Homework01\\ASPNET.Homework01\\ASPNET.Homework01.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\AspNetMvc-Homeworks\\MVC.Homework01\\ASPNET.Homework01\\ASPNET.Homework01.csproj",
       "projectName": "ASPNET.Homework01",
-      "projectPath": "C:\\Users\\User\\Desktop\\MVC-Homeworks\\MVC.Homework01\\ASPNET.Homework01\\ASPNET.Homework01.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\AspNetMvc-Homeworks\\MVC.Homework01\\ASPNET.Homework01\\ASPNET.Homework01.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\MVC-Homeworks\\MVC.Homework01\\ASPNET.Homework01\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\AspNetMvc-Homeworks\\MVC.Homework01\\ASPNET.Homework01\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
