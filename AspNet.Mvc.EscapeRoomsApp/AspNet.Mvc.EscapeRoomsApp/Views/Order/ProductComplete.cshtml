@@ -1,0 +1,13 @@
+﻿
+
+
+<h2>Customizaton Complete-Congrats!</h2>
+
+<h1>Thank you for making your own Escape Room by using our application</h1>
+
+<a asp-controller="Order" asp-action="Index" class="btn btn-danger">View All Escape Rooms</a>
+@Html.ActionLink("Customize another room", "CreateProduct", "Order", null, new
+{
+    @class = "btn btn-warning"
+});
+

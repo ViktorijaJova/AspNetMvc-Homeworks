@@ -1,0 +1,34 @@
+﻿@model AspNet.Mvc.EscapeRoomApp.Models.ViewModels.AddProduct.ProductListViewModel
+
+@{
+    ViewData["Title"] = "Ultimate Escape Rooms Experience";
+}
+
+<h1>List of our most popular Escape Rooms:</h1>
+
+
+@if (ViewBag.Message != null)
+{
+    <div class="alert alert-success">
+        @ViewBag.Message
+    </div>
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h3>Total number of Escape Rooms : @Model.TotalNumberOfProducts</h3>
+        <ol>
+            @foreach (ProductViewModel product in Model.Products)
+            {
+                <li><h4>@product.Name</h4></li>
+                //add image
+                //<partial name="_orderItemPartial" for="@product" />
+            }
+        </ol>
+    </div>
+</div>
+
+
+<a asp-controller="Product" asp-action="CreateProduct" class="btn btn-success">Click here to Customize your own</a>
+

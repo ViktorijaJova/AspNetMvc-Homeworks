@@ -1,0 +1,39 @@
+﻿
+@model AspNet.Mvc.EscapeRoomApp.Models.ViewModels.AddProduct.CreateProductViewModel
+
+@{
+    ViewData["Title"] = "CreateProduct";
+}
+
+<h2>Create and add product</h2>
+
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
+
+<form asp-route="CreateProduct" method="post">
+
+    <h3>Product details:</h3>
+
+    <label asp-for="Name"></label>
+    <input asp-for="Name" placeholder="Name" /> <br /><br />
+
+
+    <label asp-for="Price"></label>
+    <input asp-for="Price" placeholder="Price" /> <br /><br />
+
+
+    <label asp-for="Description"></label>
+    <input asp-for="Description" placeholder="Description" /> <br /><br />
+
+
+
+
+    <button type="submit" class="btn btn-primary">Create & Add Product</button>
+
+</form>
