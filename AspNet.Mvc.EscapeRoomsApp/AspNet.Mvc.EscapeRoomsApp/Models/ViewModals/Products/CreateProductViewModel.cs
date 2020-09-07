@@ -8,7 +8,10 @@ using System.Threading.Tasks;
 namespace AspNet.Mvc.EscapeRoomsApp.Models.ViewModals.Products
 {
     public class CreateProductViewModel
+        
     {
+
+        public int Id { get; set; }
         [Display(Name = "Name of the Room")]
         public string Name { get; set; }
         [Display(Name = "Describe it")]

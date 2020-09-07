@@ -24,6 +24,7 @@ namespace AspNet.Mvc.EscapeRoomsApp.Controllers
                 escapeRoomVm = new ProductViewModel()
                 {
                     //  just showing name price and image
+                    Id = room.Id,
                     Name = room.Name,
                     Price = room.Price
                 };

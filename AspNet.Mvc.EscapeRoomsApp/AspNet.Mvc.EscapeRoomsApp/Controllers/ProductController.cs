@@ -11,29 +11,20 @@ namespace AspNet.Mvc.EscapeRoomsApp.Controllers
     public class OrderController:Controller
     {
         [HttpGet("MoreDetails")]
-        public IActionResult Index()
+        [HttpGet("MoreDetails/{id:int}")]
+        public IActionResult Index(int id)
         {
-            ProductViewModel escapeRoomVm = new ProductViewModel();
-            List<ProductViewModel> escapeRoomsListVM = new List<ProductViewModel>();
-
-
-            foreach (Product room in InMemoryDB.Database.EscapeRooms)
+            var pizza =InMemoryDB.Database.EscapeRooms.FirstOrDefault(x => x.Id == id);
+            var pizzaVm = new ProductViewModel
             {
-                escapeRoomVm = new ProductViewModel()
-                {
-                    Description = room.Description
-                };
-                escapeRoomsListVM.Add(escapeRoomVm);
-            }
-
-
-            ProductListViewModel escapeRoomsList = new ProductListViewModel()
-            {
-                TotalNumberOfRooms = InMemoryDB.Database.EscapeRooms.Count,
-                EscapeRooms = escapeRoomsListVM
+                Id = pizza.Id,
+                Name = pizza.Name,
+                Price = pizza.Price,
+                Category = pizza.Category,
+                Description = pizza.Description
             };
 
-            return View("MoreDetails", escapeRoomsList);
+            return View("MoreDetails", pizzaVm);
         }
 
 

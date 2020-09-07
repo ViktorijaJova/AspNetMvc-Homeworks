@@ -1,12 +1,11 @@
 ﻿
+@model AspNet.Mvc.EscapeRoomsApp.Models.ViewModals.Products.ProductViewModel
 
-@model AspNet.Mvc.EscapeRoomsApp.Models.ViewModals.Products.ProductListViewModel
+    <form asp-route="Index" method="post">
+      
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <p  asp-for="Description" value="@Model.Description">@Model.Description</p>
+        </div>
 
-@foreach (var room in Model.EscapeRooms)
-{
-
-    <partial name="_orderItemPartial" for="@room" />
-
-  
-
-}
+    </form>

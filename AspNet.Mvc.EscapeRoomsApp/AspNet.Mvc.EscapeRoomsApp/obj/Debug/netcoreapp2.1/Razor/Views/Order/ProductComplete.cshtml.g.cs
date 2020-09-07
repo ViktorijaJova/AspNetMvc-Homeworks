@@ -56,7 +56,7 @@ using AspNet.Mvc.EscapeRoomsApp.Models;
             WriteLiteral("\r\n\r\n\r\n<h2>Customizaton Complete-Congrats!</h2>\r\n\r\n<h1>Thank you for making your own Escape Room by using our application</h1>\r\n\r\n");
             EndContext();
             BeginContext(129, 93, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11c29c4da55544a3830733be0baf28e6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59b7e242c98f462e874e25a966d51967", async() => {
                 BeginContext(197, 21, true);
                 WriteLiteral("View All Escape Rooms");
                 EndContext();
