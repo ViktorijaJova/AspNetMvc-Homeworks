@@ -38,4 +38,4 @@ C:\Users\User\Desktop\AspNetMvc-Homeworks\AspNet.Mvc.EscapeRoomsApp\AspNet.Mvc.E
 C:\Users\User\Desktop\AspNetMvc-Homeworks\AspNet.Mvc.EscapeRoomsApp\AspNet.Mvc.EscapeRoomsApp\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_orderItemPartial.cshtml.g.cs
 C:\Users\User\Desktop\AspNetMvc-Homeworks\AspNet.Mvc.EscapeRoomsApp\AspNet.Mvc.EscapeRoomsApp\obj\Debug\netcoreapp2.1\Razor\Views\Order\CreateProduct.cshtml.g.cs
 C:\Users\User\Desktop\AspNetMvc-Homeworks\AspNet.Mvc.EscapeRoomsApp\AspNet.Mvc.EscapeRoomsApp\obj\Debug\netcoreapp2.1\Razor\Views\Order\ProductComplete.cshtml.g.cs
-C:\Users\User\Desktop\AspNetMvc-Homeworks\AspNet.Mvc.EscapeRoomsApp\AspNet.Mvc.EscapeRoomsApp\obj\Debug\netcoreapp2.1\Razor\Views\Order\Products.cshtml.g.cs
+C:\Users\User\Desktop\AspNetMvc-Homeworks\AspNet.Mvc.EscapeRoomsApp\AspNet.Mvc.EscapeRoomsApp\obj\Debug\netcoreapp2.1\Razor\Views\Order\MoreDetails.cshtml.g.cs

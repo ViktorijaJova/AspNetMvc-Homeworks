@@ -1,0 +1,12 @@
+﻿
+
+@model AspNet.Mvc.EscapeRoomsApp.Models.ViewModals.Products.ProductListViewModel
+
+@foreach (var room in Model.EscapeRooms)
+{
+
+    <partial name="_orderItemPartial" for="@room" />
+
+  
+
+}

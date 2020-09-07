@@ -10,35 +10,30 @@ namespace AspNet.Mvc.EscapeRoomsApp.Controllers
 {
     public class OrderController:Controller
     {
-        [HttpGet("Products")]
+        [HttpGet("MoreDetails")]
         public IActionResult Index()
         {
+            ProductViewModel escapeRoomVm = new ProductViewModel();
+            List<ProductViewModel> escapeRoomsListVM = new List<ProductViewModel>();
 
-            var listofEscapeRoomsVM = new List<ProductViewModel>();
 
-            foreach (var room in InMemoryDB.Database.EscapeRooms)
+            foreach (Product room in InMemoryDB.Database.EscapeRooms)
             {
-                var roomVM = new ProductViewModel()
+                escapeRoomVm = new ProductViewModel()
                 {
-                    Id = room.Id,
-                    Name = room.Name,
-                    Price = room.Price,
-                    Description = room.Description,
-                    Category = room.Category
-            
+                    Description = room.Description
                 };
-
-                listofEscapeRoomsVM.Add(roomVM);
+                escapeRoomsListVM.Add(escapeRoomVm);
             }
 
 
-            ProductListViewModel productViewModel = new ProductListViewModel
+            ProductListViewModel escapeRoomsList = new ProductListViewModel()
             {
                 TotalNumberOfRooms = InMemoryDB.Database.EscapeRooms.Count,
-                EscapeRooms = listofEscapeRoomsVM
-
+                EscapeRooms = escapeRoomsListVM
             };
-            return View("Products", productViewModel);
+
+            return View("MoreDetails", escapeRoomsList);
         }
 
 
@@ -53,7 +48,6 @@ namespace AspNet.Mvc.EscapeRoomsApp.Controllers
         [HttpPost("CreateProduct")]
         public IActionResult CreateProduct(CreateProductViewModel createroom)
         {
-            //add error handling
          
             Product newroom = new Product()
             {
@@ -63,12 +57,18 @@ namespace AspNet.Mvc.EscapeRoomsApp.Controllers
                 Price = createroom.Price,
                 Description = createroom.Description
             };
-           
+            if (newroom.Name == null || newroom.Description == null || newroom.Price == 0)
+            {
+                return RedirectToAction("CreateProduct", new { error = "Error! Your escape room was not created. Try again" });
+            }
+            else
+            {
+                InMemoryDB.Database.EscapeRooms.Add(newroom);
+                return View("ProductComplete");
+            }
 
 
-            InMemoryDB.Database.EscapeRooms.Add(newroom);
 
-            return View("ProductComplete");
         }
     }
 }
