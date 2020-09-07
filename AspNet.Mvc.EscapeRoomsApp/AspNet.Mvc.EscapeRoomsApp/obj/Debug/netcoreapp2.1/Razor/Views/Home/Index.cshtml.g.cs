@@ -64,7 +64,7 @@ using AspNet.Mvc.EscapeRoomsApp.Models;
 #line default
 #line hidden
             BeginContext(157, 113, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72f0c3caf18f4cdb95829f0c38034f20", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f091685df4b44b078438abc95bac0eff", async() => {
                 BeginContext(234, 32, true);
                 WriteLiteral("Click here to Customize your own");
                 EndContext();
@@ -156,7 +156,7 @@ using AspNet.Mvc.EscapeRoomsApp.Models;
             WriteLiteral("cSQdK4kkgS6kkgUpSkkgSQKSSBzWTvHmk9sJJIGpEpJIEbJBJJAkpSSQIpLiSBJJJIEkkkgSSSSBJJJIEkkkgSSSSD//Z\" />\r\n                <br />\r\n                ");
             EndContext();
             BeginContext(10116, 160, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9bfd87dd89b14c59877ed6180c776254", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f52601bf37a41f28e61dcd9e4c81d26", async() => {
                 BeginContext(10200, 72, true);
                 WriteLiteral("<button class=\"btn btn-success\">More Details for the EscapeRoom</button>");
                 EndContext();

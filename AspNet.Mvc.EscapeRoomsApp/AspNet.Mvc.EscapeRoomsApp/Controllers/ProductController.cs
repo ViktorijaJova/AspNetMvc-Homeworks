@@ -14,17 +14,17 @@ namespace AspNet.Mvc.EscapeRoomsApp.Controllers
         [HttpGet("MoreDetails/{id:int}")]
         public IActionResult Index(int id)
         {
-            var pizza =InMemoryDB.Database.EscapeRooms.FirstOrDefault(x => x.Id == id);
-            var pizzaVm = new ProductViewModel
+            var room =InMemoryDB.Database.EscapeRooms.FirstOrDefault(x => x.Id == id);
+            var roomVm = new ProductViewModel
             {
-                Id = pizza.Id,
-                Name = pizza.Name,
-                Price = pizza.Price,
-                Category = pizza.Category,
-                Description = pizza.Description
+                Id = room.Id,
+                Name = room.Name,
+                Price = room.Price,
+                Category = room.Category,
+                Description = room.Description
             };
 
-            return View("MoreDetails", pizzaVm);
+            return View("MoreDetails", roomVm);
         }
 
 
