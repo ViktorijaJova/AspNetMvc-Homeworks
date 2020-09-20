@@ -63,7 +63,7 @@ using EscapeRoom.Application.Models;
             WriteLiteral("\r\n<h2>Index</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(149, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "716408b07ed64dd88f241d9017766ca2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7196fc6ed2ec46ff83b8c19035439927", async() => {
                 BeginContext(172, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
